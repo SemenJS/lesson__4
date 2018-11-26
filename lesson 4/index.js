@@ -36,6 +36,12 @@ let appData = {
     detectDayBudget: function () {
         appData.moneyPerDay = (appData.budget / 30).toFixed();
         alert('Ежедневный бюджет: ' + appData.moneyPerDay);
+        // for (let i = 0; i < 3; i++) {
+        //     let costs = +prompt('Статья необязательных расходов?');
+
+        //     appData.optionalExpenses[i] = costs;
+
+        // }
     },
     detectLevel: function () {
         if (appData.moneyPerDay < 100) {
